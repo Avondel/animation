@@ -1,0 +1,113 @@
+:root {
+  --animation-duration: 1s;
+
+}
+
+/* Animations */
+@keyframes fillColor {
+  to {
+    background-color: #7afcff;
+  }
+}
+
+@keyframes unfillColor {
+  to {
+    background-color: #feff9c;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes moveLeft{
+	0%   {left:0px; top:0px;}
+	100%  {left:200px; top:0px;}
+}
+
+@keyframes moveDown{
+	0%   {left:0px; top:0px;}
+	100%  {left:0px; top:200px;}
+}
+
+@keyframes moveDiag{
+	0% {left:0px; top:0px;}
+	100% {left:200px; top: 200px;}
+}
+
+@keyframes moveCircle{
+	
+}
+
+@keyframes moveSpiral{
+	0% {transform: rotate(0deg) translateX(0px) rotate(0deg);}
+	100% {transform: rotate(360deg) translateX(150px) rotate(-360deg);}
+}
+
+.fill {
+  animation: fillColor var(--animation-duration) forwards ease-out;
+}
+
+.fadeOut {
+  animation: fadeOut var(--animation-duration) forwards ease-out;
+}
+
+.moveLeft{
+	animation: moveLeft var(--animation-duration) forwards ease-out;
+}
+
+.moveDown{
+	animation: moveDown var(--animation-duration) forwards ease-out;
+}
+
+.moveDiag{
+	animation: moveDiag var(--animation-duration) forwards ease-out;
+}
+
+.moveSpiral{
+	animation: moveSpiral var(--animation-duration) forwards linear;
+}
+
+/* css */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+
+
+.box{
+	position: relative;
+	width: 100px;
+	height: 100px;
+	
+}
+
+#box1{
+	background-color: red;
+}
+
+#box2{
+	background-color: green;
+}
+
+#box3{
+	background-color: blue;
+}
+
+#box4{
+	background-color: purple;
+}
+
+
